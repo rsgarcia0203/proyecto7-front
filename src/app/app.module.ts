@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -25,6 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +41,15 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     AboutComponent,
     ContactComponent,
     PageNotFoundComponent,
+    ImageSliderComponent,
+    ContactCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     MatToolbarModule,
     MatButtonModule,
     MatDividerModule,
@@ -50,7 +57,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     MatInputModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

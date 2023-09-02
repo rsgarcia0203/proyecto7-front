@@ -1,0 +1,24 @@
+.contact-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.developers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.developers-list li {
+  margin-bottom: 30px;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.developer-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}

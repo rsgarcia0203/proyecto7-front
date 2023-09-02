@@ -9,12 +9,12 @@ import { Product } from 'src/app/interfaces/product';
   providedIn: 'root'
 })
 export class ProductService {
-  private controller:string = "producto";
+  private controller:string = "rest_Producto";
 
   public constructor(private http: HttpClient, private global:GlobalService) {}
 
   public getAllProducts(): Observable<Object> {
-    return this.http.get(`${this.global.apiUrl}/${this.global.servicePrefix}/${this.controller}/getAll`)
+    return this.http.get(`${this.global.apiUrl}/${this.global.servicePrefix}/${this.controller}/findAll/json`)
   }
 
   public getProductsFiltersBy(type:string):Observable<Object> {

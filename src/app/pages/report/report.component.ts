@@ -28,11 +28,11 @@ export class ReportComponent {
               this.filteredProducts.data = (response as Array<Product>);
             });
 
-    this.pcs.getAll()
+    /* this.pcs.getAll()
             .subscribe((response) => {
               this.selectMsg = '-';
               this.selectValues = (response as Array<ProductCategory>)
-            });
+            }); */
   }
 
   public onCategorySelected(categoryId: number) {
