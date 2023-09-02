@@ -1,0 +1,5 @@
+<mat-card class="image-slider">
+    <div class="slider-container">
+      <div *ngFor="let image of images; let i = index" class="image-item" [class.show]="currentIndex === i" [style.background-image]="'url(' + image + ')'" ></div>
+    </div>
+</mat-card>

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalService {
   public appName: string = 'Restaurant App';
-  public apiUrl: string = 'http://localhost:3001';
-  public servicePrefix: string = 'api';
+  public apiUrl: string = 'http://localhost:3000';
+  public servicePrefix: string = 'rest';
   constructor() { }
 }
