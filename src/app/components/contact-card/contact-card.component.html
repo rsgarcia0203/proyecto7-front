@@ -1,27 +1,24 @@
-<mat-card class="contact-card" style="margin-top: 30px;">
-    <h2>Politos Restaurant </h2>
-    <p style="text-align: justify;">{{ restaurantProjectDescription }}</p>
-</mat-card>
-
-<div style="margin: 0 auto; padding: 20px; margin-top: 30px;">
-    <h2 style="text-align: center;">Equipo de Desarrollo</h2>
-</div>
-
-<div *ngFor="let developer of developers">
-    <mat-card class="developer-card">
-        <h3>{{ developer.name }}</h3>
-            <p>{{ developer.description }}</p>
-            <div class="social-links">
-                <a
-                *ngFor="let socialLink of developer.socialLinks"
-                [href]="socialLink.url"
-                target="_blank"
-                >{{ socialLink.platform }}</a
-                >
-                <i class="fa-brands fa-github" style="color: #1c1c1c;"></i>
-            </div>
-    </mat-card>
-</div>
+<mat-card class="developer-card">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <fa-icon [icon]="faUser"></fa-icon>
+      </div>
+      <mat-card-title>{{ developer.name }}</mat-card-title>
+      <mat-card-subtitle>{{ developer.user }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ developer.photo }}" [width]="200" [height]="200" alt="Developer Profile Photo">
+    <mat-card-content>
+      <p>{{ developer.description }}</p>
+    </mat-card-content>
+    <mat-card-actions class="social-links">
+        <a mat-button href="{{ developer.linkedin }}" target="_blank">
+            <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+          </a>
+          <a mat-button href="{{ developer.github }}" target="_blank">
+            <fa-icon [icon]="faGithub"></fa-icon> GitHub
+          </a>
+    </mat-card-actions>
+  </mat-card>
 
 
     
