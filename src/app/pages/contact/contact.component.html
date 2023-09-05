@@ -1,1 +1,8 @@
-<app-contact-card></app-contact-card>
+<div style="margin: 0 auto; padding: 20px; margin-top: 30px;">
+    <h2 style="text-align: center;">Equipo de Desarrollo</h2>
+</div>
+
+<div *ngFor="let developer of developers">
+    <app-contact-card [developer]="developer"></app-contact-card>
+      <br><br><br>
+</div>
