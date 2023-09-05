@@ -9,8 +9,8 @@ export interface Employee {
   IdCard: string;
   Phone: string;
   Mail: string;
-  CreationDate: string;
-  UpdateDate: string;
-  DepartureDate: string;
+  CreationDate: Date;
+  UpdateDate: Date;
+  DepartureDate: Date;
   Status: string;
 }
