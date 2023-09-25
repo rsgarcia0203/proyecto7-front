@@ -1,5 +1,5 @@
 import { ApiService } from './../../providers/apiservice/api.service';
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Product } from 'src/app/interfaces/product';
 import { MatTableDataSource } from '@angular/material/table';
 import { ProductCategory } from 'src/app/interfaces/product-category';
@@ -11,7 +11,7 @@ import { Order } from 'src/app/interfaces/order';
   templateUrl: './report.component.html',
   styleUrls: ['./report.component.css']
 })
-export class ReportComponent {
+export class ReportComponent implements OnInit {
   protected displayedColumns: string[] = ['OrderID', 'Receipt', 'Date', 'StartTime', 'EndTime', 'Total'];
   protected msg:string = '';
   public orders:Array<Order> = [];
@@ -31,7 +31,7 @@ export class ReportComponent {
             });
   }
 
-  /* public onCategorySelected(categoryId: number) {
-    this.filteredProducts.data = this.products.filter(product => product.categoryId === categoryId);
-  } */
+  public applyFilter(filterValue: string): void {
+    this.filteredOrders.filter = filterValue.trim().toLowerCase();
+  }
 }

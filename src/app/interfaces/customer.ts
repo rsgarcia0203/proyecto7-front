@@ -1,14 +1,14 @@
 export interface Customer {
-  CustomerID: number;
-  FirstName: string;
-  LastName: string;
-  IdCard: string;
-  BirthDate: Date;
-  CreationDate: Date;
-  Address: string;
-  Phone: string;
-  Mail: string;
-  Latitude: string;
-  Longitude: string;
-  LastPurchaseDate: Date;
+  CodigoCliente: number;
+  Nombres: string;
+  Apellidos: string;
+  Cedula: string;
+  FechaNacimiento: Date;
+  FechaCreacion: Date;
+  Direccion: string;
+  Telefono: string;
+  Correo: string;
+  Latitud: string;
+  Longitud: string;
+  FechaUltimaCompra: Date;
 }

@@ -1,16 +1,16 @@
 export interface Employee {
-  EmployeeID: number;
-  User: string;
-  FirstName: string;
-  LastName: string;
-  Order: number;
-  ClientID: number;
-  Position: string;
-  IdCard: string;
-  Phone: string;
-  Mail: string;
-  CreationDate: Date;
-  UpdateDate: Date;
-  DepartureDate: Date;
-  Status: string;
+  CodigoEmpleado: number;
+  Usuario: string;
+  Nombres: string;
+  Apellidos: string;
+  Orden: number;
+  Cliente: number;
+  Cargo: string;
+  Cedula: string;
+  Celular: string;
+  Correo: string;
+  FechaCreacion: Date;
+  FechaActualizacion: Date;
+  FechaSalida: Date;
+  Estado: string;
 }
